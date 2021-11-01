@@ -23,23 +23,37 @@
     </nav>
 
     <header class="hero">
-        <h1 class="hero-heading"><span class="heading-inverted">Dummy</span> blog</h1>
+        <h1 class="hero-heading"><span class="heading-inverted">Git commit -m</span> "and its dilemma"</h1>
     </header>
 
     <article class="container-center showcase-blog">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor at, placeat error cumque iusto, beatae eos ipsam vel molestiae sed aperiam! Illum nihil esse architecto voluptates maxime, cum quas repellat!
+            I'm sure everyone who is on this page has atleast used Git or Github once. While version control is a lifesaver for us clumsy code breaking devlopers. I've often found myself and other developers to be particularly not exactly verbose for their commits, and I get it! You got your code to run after a 1000 edits and now you want me to think of a commit message! But writing small edits isn't going to cut it either. So this blog is for me to come back to and for people who often have one word commit messages.
         </p>
 
-        <h2>Dummy content</h2>
+        <h2>Learn how to write good commit messages,<small> With memes!</small></h2>
+        <img class="blog-img" src="https://miro.medium.com/max/1400/1*gwlr9npJkP4TUSNvUNfEhA.png">
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro deleniti accusantium non esse fugiat laborum voluptas quaerat commodi aspernatur tempora perspiciatis, sed possimus aperiam sequi harum nihil optio, iste ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vitae commodi eligendi distinctio! Reprehenderit consectetur ipsum amet eaque, obcaecati culpa aperiam consequatur itaque eveniet? Libero natus assumenda modi ipsa tenetur?
+            <strong>Why you need good commit messages?</strong>
+            <p>
+                This past one month, I've been working a lot on React and updating my portfolio. Which means a lot of git commits, and also means me breaking my code several times. A good commit message comes handy in here. Let me show you with a bad example.
+                <img class="blog-img" src="https://miro.medium.com/max/1050/1*1jYLHBrHV2Bsz-d5WuxTOA.png" alt="">
+                Your code is broken, you need to revert back to a previous state to make sense of it now. That means going through the commit history and reverting back to a point where most of things if not everything was working properly. Now image having to look through a comit history like the image shown below.
+                <img class="blog-img" src="https://miro.medium.com/max/1041/0*2H8DOwD0jeKAvLgH.png" alt="">
+                It's a nightmare right? Checking out and testing every commit to see which one is which. This is the point in time you start wondering if you'd have taken some time to write a meaningful commit message. Well it's never too late to start.
+            </p>
         </p>
         
 
-        <h2> Content 2 <small>With small text.</small> </h2>
+        <h2> Here are some tips for your future commit messages.</h2>
         <p>
-            The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.
+            <ul class="list-style">
+                <li class="blog-points">Make a multi line commit. A good commit has 3 parts : Subject, body and footer.</li>
+                <li class="blog-points">Limit the subject to 50 characters and be sharp about the changes.</li>
+                <li class="blog-points">The subject is a single line that best sums up the changes made in the commit.</li>
+                <li class="blog-points">Wrap the commit body in 72 characters. This makes developers to look at commit messages on the small terminal.</li>
+                <li class="blog-points">The footer is optional, write future changes to be made, tests to be done or parts to be reviewed here.</li>
+            </ul>
         </p>
         
     </article>
