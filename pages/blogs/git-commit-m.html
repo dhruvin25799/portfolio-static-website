@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git commit -m "and its dilemma" | Dhruvin Mehta</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="../../styles/styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <nav class="navigation container">
-        <div class="nav-brand">Dhruvin Mehta</div>
-        <ul class="list-non-bullet nav-pills">
-            <li class="list-item-inline">
-                <a class="link" href="../../index.html">Home</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="../projects.html">Projects</a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link link-active" href="../blogs.html">Blogs</a>
-            </li>
-        </ul>
-    </nav>
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="../../index.html">Dhruvin Mehta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="../projects.html#projects-section">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="../blogs.html#blogs-section">Blogs</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Dhruvin Mehta the upcoming web developer.</h1>
+                    <a href="../projects.html#projects-section"><button type="button" class="download-button btn btn-dark btn-lg "><i class="fas fa-tasks"></i>Projects</button></a>
+                    <a href="../blogs.html#blogs-section"><button type="button" class="download-button btn btn-lg btn-outline-light"><i class="fas fa-blog"></i>Blogs</button></a>
+                </div>
+                <div class="col-lg-6 title-image-container">
+                    <img class="title-image" src="../../images/web-dev.png " alt="web-dev mockup">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <header class="hero">
-        <h1 class="hero-heading"><span class="heading-inverted">Git commit -m</span> "and its dilemma"</h1>
-    </header>
+    <article class="blog-post" id="post">
+        <h2 class="blog-post-title">Git commit -m "and its dilemma"</h2>
+        <p class="blog-post-meta">October, 2021 by <a href="../../index.html">Dhruvin</a></p>
 
-    <article class="container-center showcase-blog">
-        <p>
-            I'm sure everyone who is on this page has atleast used Git or Github once. While version control is a lifesaver for us clumsy code breaking devlopers. I've often found myself and other developers to be particularly not exactly verbose for their commits, and I get it! You got your code to run after a 1000 edits and now you want me to think of a commit message! But writing small edits isn't going to cut it either. So this blog is for me to come back to and for people who often have one word commit messages.
-        </p>
-
+        <p>I'm sure everyone who is on this page has atleast used Git or Github once. While version control is a lifesaver for us clumsy code breaking devlopers. I've often found myself and other developers to be particularly not exactly verbose for their
+            commits, and I get it! You got your code to run after a 1000 edits and now you want me to think of a commit message! But writing small edits isn't going to cut it either. So this blog is for me to come back to and for people who often have
+            one word commit messages.</p>
+        <hr>
         <h2>Learn how to write good commit messages,<small> With memes!</small></h2>
         <img class="blog-img" src="https://miro.medium.com/max/1400/1*gwlr9npJkP4TUSNvUNfEhA.png">
         <p>
             <strong>Why you need good commit messages?</strong>
             <p>
                 This past one month, I've been working a lot on React and updating my portfolio. Which means a lot of git commits, and also means me breaking my code several times. A good commit message comes handy in here. Let me show you with a bad example.
-                <img class="blog-img" src="https://miro.medium.com/max/1050/1*1jYLHBrHV2Bsz-d5WuxTOA.png" alt="">
-                Your code is broken, you need to revert back to a previous state to make sense of it now. That means going through the commit history and reverting back to a point where most of things if not everything was working properly. Now image having to look through a comit history like the image shown below.
-                <img class="blog-img" src="https://miro.medium.com/max/1041/0*2H8DOwD0jeKAvLgH.png" alt="">
-                It's a nightmare right? Checking out and testing every commit to see which one is which. This is the point in time you start wondering if you'd have taken some time to write a meaningful commit message. Well it's never too late to start.
+                <img class="blog-img" src="https://miro.medium.com/max/1050/1*1jYLHBrHV2Bsz-d5WuxTOA.png" alt=""> Your code is broken, you need to revert back to a previous state to make sense of it now. That means going through the commit history and
+                reverting back to a point where most of things if not everything was working properly. Now image having to look through a comit history like the image shown below.
+                <img class="blog-img" src="https://miro.medium.com/max/1041/0*2H8DOwD0jeKAvLgH.png" alt=""> It's a nightmare right? Checking out and testing every commit to see which one is which. This is the point in time you start wondering if you'd
+                have taken some time to write a meaningful commit message. Well it's never too late to start.
             </p>
         </p>
-        
+
 
         <h2> Here are some tips for your future commit messages.</h2>
         <p>
@@ -55,28 +78,16 @@
                 <li class="blog-points">The footer is optional, write future changes to be made, tests to be done or parts to be reviewed here.</li>
             </ul>
         </p>
-        
     </article>
-
-
-    <footer class="footer">
-        <div class="footer-header">Social Media Handles</div>
-        <ul class="social-links list-non-bullet">
-            <li class="list-item-inline">
-                <a class="link" href="https://github.com/dhruvin25799">
-                    <img src="../../images/icons/github.svg" alt="Github">
-                </a>
-            </li>
-            <li class="list-item-inline">
-                <a class="link" href="https://linkedin.com/in/dhruvin-mehta-21a8a7190">
-                    <img src="../../images/icons/linkedin.svg" alt="LinkedIn">
-                </a>
-            </li>
-            
-        </ul>
+    <footer id="footer">
+        <a href="https://github.com/dhruvin25799"><i class="social-icon fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/dhruvin-mehta-21a8a7190"><i class="social-icon fab fa-linkedin"></i></a>
+        <a href="mailto:dhruvin.mehta25799@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
+        <p>With <i class="fas fa-heart"></i> from Dhruvin Mehta</p>
     </footer>
 
 
-    
+
 </body>
+
 </html>
