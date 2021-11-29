@@ -5,125 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Dhruvin Mehta</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="./styles/styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <section id="title">
-        <div class="container-fluid">
-            <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="">Dhruvin Mehta</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="pages/projects.html#projects-section">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pages/blogs.html#blogs-section">Blogs</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <nav class="navigation container">
+            <div class="nav-brand">Dhruvin Mehta</div>
+            <ul class="list-non-bullet nav-pills">
+                <li class="list-item-inline">
+                    <a class="link link-active" href="index.html">Home</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="./pages/projects.html#projects-section">Projects</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="./pages/blogs.html#blogs-section">Blogs</a>
+                </li>
+            </ul>
+        </nav>
 
+        <header class="hero">
+            <h1 class="hero-heading">Dhruvin Mehta the upcoming<span class="headding-inverted"> {web developer}</span></h1>
+            <img class="hero-img" src="images/web-dev.png" />
+            <a class="hero-btn" href="./pages/projects.html#projects-section"><img class="btn-img" src="images/icons/tasks-solid.svg">Projects</a>
+            <a class="hero-btn-light" href="./pages/blogs.html#blogs-section"><img class="btn-img" src="images/icons/blog-solid.svg">Blogs</a>
 
-
-            <!-- Title -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1>Dhruvin Mehta the upcoming web developer.</h1>
-                    <a href="pages/projects.html#projects-section"><button type="button" class="download-button btn btn-dark btn-lg "><i class="fas fa-tasks"></i>Projects</button></a>
-                    <a href="pages/blogs.html#blogs-section"><button type="button" class="download-button btn btn-lg btn-outline-light"><i class="fas fa-blog"></i>Blogs</button></a>
-                </div>
-                <div class="col-lg-6 title-image-container">
-                    <img class="title-image" src="images/web-dev.png " alt="web-dev mockup">
-                </div>
-            </div>
-        </div>
-
+        </header>
     </section>
 
-    <!-- Skills -->
+    <hr>
 
     <section id="skills">
-        <div class="row">
-            <div class="feature-box col-lg-3">
-                <i class="icon fab fa-html5 fa-4x"></i>
-                <h3>HTML5</h3>
-            </div>
-            <div class="feature-box col-lg-3">
-                <i class="icon fab fa-css3-alt fa-4x"></i>
-                <h3>CSS3</h3>
-            </div>
-            <div class="feature-box col-lg-3">
-                <i class="icon fab fa-js-square fa-4x"></i>
-                <h3>VanillaJS</h3>
-            </div>
-            <div class="feature-box col-lg-3">
-                <i class="icon fab fa-react fa-4x"></i>
-                <h3>ReactJS</h3>
+        <div>
+            <div class="skill-div">
+                <div class="skill-box">
+                    <img class="skill-img" src="images/icons/html5-brands.svg" alt="">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-box">
+                    <img class="skill-img" src="images/icons/css3-alt-brands.svg" alt="">
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-box">
+                    <img class="skill-img" src="images/icons/js-square-brands.svg" alt="">
+                    <h3>VanillaJS</h3>
+                </div>
+                <div class="skill-box">
+                    <img class="skill-img" src="images/icons/react-brands.svg" alt="">
+                    <h3>ReactJS</h3>
+                </div>
             </div>
         </div>
 
     </section>
 
-    <!-- Carousel -->
+    <hr>
 
-    <section id="carousel">
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h2 class="testimonial-text">Dhruvin Quiz</h2>
-                    <h2 class="testimonial-text">A CLI app built with <strong>nodeJS</strong>. A quiz about how well you know me. Try and find out!</h2>
-                    <a href="https://replit.com/@DhruvinMehta/Dhruvin-quiz?embed=true" target="_blank"><button type="button" class="download-button btn btn-dark btn-lg ">Live Project</button></a>
-                    <a href="https://github.com/dhruvin25799/Dhruvin-quiz" target="_blank"><button type="button" class="download-button btn btn-lg btn-outline-light">Source Code</button></a>
-                    <br>
-                    <i class="fas fa-terminal"></i>
-                    <em>November, 2021</em>
-                </div>
-                <div class="carousel-item">
-                    <h2 class="testimonial-text">Mark15?</h2>
-                    <h2 class="testimonial-text">If you want to see all my cool projects and blogs head to the links below!</h2>
-                    <a href="pages/projects.html#projects-section"><button type="button" class="download-button btn btn-dark btn-lg "><i class="fas fa-tasks"></i>Projects</button></a>
-                    <a href="pages/blogs.html#blogs-section"><button type="button" class="download-button btn btn-lg btn-outline-light"><i class="fas fa-blog"></i>Blogs</button></a>
-                    <br>
-                    <i class="fas fa-terminal"></i>
-                    <em>November, 2021</em>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>Projects</h1>
+            <p>Here you'll find the collection of projects that I've made and a bit of a flex too.</p>
+            <p>Click the link below to view it all.</p>
+            <a class="link link-secondary" href="./pages/projects.html#projects-section">Projects</a>
         </div>
-
-
-
-
-
     </section>
 
-    <!-- Footer -->
+    <section class="section">
+        <div class="container container-center">
+            <h1>Blogs</h1>
+            <p>Here you'll find me blabbering about things I like and things I want people to know that helped me.</p>
+            <p>Dont't worry even though I'm a nerd there are things that are non-tech related here so check it out!</p>
+            <a class="link link-secondary" href="./pages/blogs.html#blogs-section">Blogs</a>
+        </div>
+    </section>
 
-    <footer id="footer">
-        <a href="https://github.com/dhruvin25799" target="_blank"><i class="social-icon fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/dhruvin-mehta-21a8a7190" target="_blank"><i class="social-icon fab fa-linkedin"></i></a>
-        <a href="mailto:dhruvin.mehta25799@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
-        <p>With <i class="fas fa-heart"></i> from Dhruvin Mehta</p>
+    <hr>
+
+    <footer class="footer">
+        <div class="footer-header">Social Media Handles</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/dhruvin25799" target="_blank">
+                    <img src="./images/icons/github-brands.svg" alt="Github">
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://linkedin.com/in/dhruvin-mehta-21a8a7190" target="_blank">
+                    <img src="./images/icons/linkedin-brands.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="mailto:dhruvin.mehta25799@gmail.com" target="_blank">
+                    <img src="./images/icons/envelope-solid.svg" alt="Email">
+                </a>
+            </li>
+
+        </ul>
     </footer>
-
 
 
 

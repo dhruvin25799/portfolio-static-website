@@ -5,88 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs | Dhruvin Mehta</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="../styles/styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <section id="title">
-        <div class="container-fluid">
-            <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="../index.html">Dhruvin Mehta</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html#projects-section">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="blogs.html">Blogs</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <nav class="navigation container">
+            <div class="nav-brand">Dhruvin Mehta</div>
+            <ul class="list-non-bullet nav-pills">
+                <li class="list-item-inline">
+                    <a class="link" href="../index.html">Home</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="./projects.html#projects-section">Projects</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link link-active" href="./blogs.html">Blogs</a>
+                </li>
+            </ul>
+        </nav>
 
-
-
-            <!-- Title -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1>Dhruvin Mehta the upcoming web developer.</h1>
-                    <a href="projects.html#projects-section"><button type="button" class="download-button btn btn-dark btn-lg "><i class="fas fa-tasks"></i>Projects</button></a>
-                    <a href="blogs.html"><button type="button" class="download-button btn btn-lg btn-outline-light"><i class="fas fa-blog"></i>Blogs</button></a>
-                </div>
-                <div class="col-lg-6 title-image-container">
-                    <img class="title-image" src="../images/web-dev.png " alt="web-dev mockup">
-                </div>
-            </div>
-        </div>
+        <header class="hero">
+            <h1 class="hero-heading">Dhruvin Mehta the upcoming<span class="heading-inverted"> {web developer}</span></h1>
+            <img class="hero-img" src="../images/web-dev.png" />
+            <a class="hero-btn" href="../pages/projects.html#projects-section"><img class="btn-img" src="../images/icons/tasks-solid.svg">Projects</a>
+            <a class="hero-btn-light" href="../pages/blogs.html#blogs-section"><img class="btn-img" src="../images/icons/blog-solid.svg">Blogs</a>
+        </header>
 
     </section>
-    <section id="blogs-section">
 
-        <div class="row mb-2">
-            <div class="col-lg-12">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Tech</strong>
-                        <h3 class="mb-0">Git commit -m "and its dilemma"</h3>
-                        <div class="mb-1 text-muted">October, 2021</div>
-                        <p class="card-text mb-auto">Why is that important? Who cares about messages? You want to have good commit messages that provide you useful information about what has changed and why.</p>
-                        <a href="blogs/git-commit-m.html#post"><button type="button" class="stretched-link btn btn-lg btn-outline-dark"><i class="fas fa-blog"></i>Read More</button></a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <i class="blog-icon fab fa-github fa-6x"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-12">
-                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Non-Tech</strong>
-                        <h3 class="mb-0">The Time Management Matrix and how to use it</h3>
-                        <div class="mb-1 text-muted">November, 2021</div>
-                        <p class="mb-auto">Always procrastinating? Do you find yourself in chaos heading towards a deadline? Time management is a skill practised by few but useful to all.</p>
-                        <a href="blogs/time-management.html#post"><button type="button" class="stretched-link btn btn-lg btn-outline-dark"><i class="fas fa-blog"></i>Read More</button></a>
-                    </div>
-                    <div class="col-auto d-none d-lg-block">
-                        <i class="blog-icon fas fa-stopwatch fa-6x"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer id="footer">
-        <a href="https://github.com/dhruvin25799" target="_blank"><i class="social-icon fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/dhruvin-mehta-21a8a7190" target="_blank"><i class="social-icon fab fa-linkedin"></i></a>
-        <a href="mailto:dhruvin.mehta25799@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
-        <p>With <i class="fas fa-heart"></i> from Dhruvin Mehta</p>
+    <hr>
+    <div id="blogs-section">
+        <ul class="list-non-bullet">
+            <li>
+                <article class="showcase-list container container-center">
+                    <h1>Git commit -m "and its dilemma"</h1>
+                    <small>October, 2021</small>
+                    <p>
+                        Why is that important? Who cares about messages? You want to have good commit messages that provide you useful information about what has changed and why. Because when things really tend to go upside down, then revision history is a great resource to
+                        find out quickly where exactly things went wrong.
+                    </p>
+
+                    <a class="link link-primary" href="./blogs/git-commit-m.html">Read More</a>
+                </article>
+            </li>
+
+            <li>
+                <article class="showcase-list ow">
+                    <h1>The Time Management Matrix and how to effectively use it</h1>
+                    <small>November, 2021</small>
+                    <p>
+                        Always procrastinating? Do you find yourself in chaos heading towards a deadline? Time management is a skill practised by few but useful to all. Time management matrix by Stephen R Covey is an excellent way for us procrastinating web developers to manage
+                        our time, enjoy personal life apart from work as well while being stress free of the deadlines.
+                    </p>
+
+                    <a class="link link-primary" href="./blogs/time-management.html">Read More</a>
+                </article>
+            </li>
+        </ul>
+
+        <hr>
+
+        <footer class="footer">
+            <div class="footer-header">Social Media Handles</div>
+            <ul class="social-links list-non-bullet">
+                <li class="list-item-inline">
+                    <a class="link" href="https://github.com/dhruvin25799" target="_blank">
+                        <img src="../images/icons/github-brands.svg" alt="Github">
+                    </a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="https://linkedin.com/in/dhruvin-mehta-21a8a7190" target="_blank">
+                        <img src="../images/icons/linkedin-brands.svg" alt="LinkedIn">
+                    </a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="mailto:dhruvin.mehta25799@gmail.com" target="_blank">
+                        <img src="../images/icons/envelope-solid.svg" alt="Email">
+                    </a>
+                </li>
+
+            </ul>
+    </div>
     </footer>
 
 

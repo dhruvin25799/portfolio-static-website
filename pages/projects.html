@@ -5,291 +5,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects | Dhruvin Mehta</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="../styles/styles.css" rel="stylesheet" />
 </head>
 
 <body>
     <section id="title">
-        <div class="container-fluid">
-            <!-- Nav Bar -->
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="../index.html">Dhruvin Mehta</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="blogs.html#blogs-section">Blogs</a></li>
-                    </ul>
-                </div>
-            </nav>
+        <nav class="navigation container">
+            <div class="nav-brand">Dhruvin Mehta</div>
+            <ul class="list-non-bullet nav-pills">
+                <li class="list-item-inline">
+                    <a class="link" href="../index.html">Home</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link link-active" href="./projects.html">Projects</a>
+                </li>
+                <li class="list-item-inline">
+                    <a class="link" href="./blogs.html#blogs-section">Blogs</a>
+                </li>
+            </ul>
+        </nav>
 
-
-
-            <!-- Title -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <h1>Dhruvin Mehta the upcoming web developer.</h1>
-                    <a href="projects.html"><button type="button" class="download-button btn btn-dark btn-lg "><i class="fas fa-tasks"></i>Projects</button></a>
-                    <a href="blogs.html#blogs-section"><button type="button" class="download-button btn btn-lg btn-outline-light"><i class="fas fa-blog"></i>Blogs</button></a>
-                </div>
-                <div class="col-lg-6 title-image-container">
-                    <img class="title-image" src="../images/web-dev.png " alt="web-dev mockup">
-                </div>
-            </div>
-        </div>
+        <header class="hero">
+            <h1 class="hero-heading">Dhruvin Mehta the upcoming<span class="heading-inverted"> {web developer}</span></h1>
+            <img class="hero-img" src="../images/web-dev.png" />
+            <a class="hero-btn" href="../pages/projects.html#projects-section"><img class="btn-img" src="../images/icons/tasks-solid.svg">Projects</a>
+            <a class="hero-btn-light" href="../pages/blogs.html#blogs-section"><img class="btn-img" src="../images/icons/blog-solid.svg">Blogs</a>
+        </header>
 
     </section>
-    <section id="projects-section">
 
-        <div class="container">
+    <hr>
+    <div id="projects-section">
+        <ul class="list-non-bullet">
+            <li>
+                <article class="showcase-list ow">
+                    <h1>Dhruvin Quiz</h1>
+                    <small>October, 2021</small>
+                    <p>
+                        A CLI app built with <strong>nodeJS</strong>. A quiz about how well you know me. Try and find out!
+                    </p>
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>MarkOne</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-node-js fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">A CLI app built with nodeJS. A quiz about how well you know me. Try and find out!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://replit.com/@DhruvinMehta/Dhruvin-quiz?embed=true" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/Dhruvin-quiz" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>MarkTwo</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-node-js fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Have you watched Game of Thrones? How well do you know it? Let's play a quiz and see.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://replit.com/@DhruvinMehta/GameofThrone-quiz?embed=true" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/GameofThrone-quiz" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>MarkSix</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-js-square fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Ever wondered what the gibberish that Minions speak could be a language, well fun fact it is! Head over to this app to translate English to Minion/Banana.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://miniontranslator123.netlify.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/minion_talk" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <a class="link link-primary" href="https://replit.com/@DhruvinMehta/Dhruvin-quiz?embed=true" target="_blank">Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/Dhruvin-quiz" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
 
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>MarkSeven</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-js-square fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Liked the Minion/Banana Translator above? Here's another one for all my Game of Thrones fans, English to Valyrian transalator. Unleash your inner Daenerys Targaryen!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://valyriantalk123.netlify.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/valyrian_talk" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>MarkEight</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-react fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Do you ever sometimes wonder what an emoji means? Well this for all my clueless friends to get clues from emojis. This React app tell you exactly what an emoji means!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://wxblw.csb.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/emoji_meaning" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>MarkNine</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-react fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Confused with flags? This React app will tell you exactly what kind of flag!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://h9o28.csb.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/flag_meaning" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <li>
+        <article class="showcase-list container container-center">
+          <h1>Game of Thrones Quiz</h1>
+          <small>October, 2021</small>
+          <p>
+            Have you watched <strong>Game of Thrones?</strong> How well do you know it? Let's play a quiz and see.
+          </p>
 
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>MarkNine</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-react fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Wanna up your playlist? Looking for some good music recommendations? This React app does just that music recommendations from the upcoming {web developer} himself.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://dl7w0.csb.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/music_recommendation" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>MarkTen</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-js-square fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">A bit lost while calculating how much change you have to give back? This Javascript app will tell you exactly how much change and in what denominations you have to give back.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://cashregisterjs123.netlify.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/cash_register_js" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>Mark11</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-js-square fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Do you believe in luck? Want to know what your lucky number is according to your birth date? This Javascript app is for you!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://luckynumber123.netlify.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/birthday_lucky_number_js" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>Mark12</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-js-square fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Good with Triangles? Head over to this JavaScript app to take a quiz on traingles. Also this app has pages to help you with calculating the hypotenuse and area of the traingle.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://trianglefun123.netlify.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/triangle_fun" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>Mark13</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-js-square fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Obsessed with Palindromes? This JavaScript app will tell you if your birthday is a palindrome or not and will also tell you by how many days you missed being the special one!</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://birthdaypalindrome123.netlify.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/palindrome_birthday" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <div class="card-header">
-                            <h4>Mark14</h4>
-                        </div>
-                        <i class="bd-placeholder-img card-img-to social-icon fab fa-js-square fa-6x icon"></i>
-                        <div class="card-body">
-                            <p class="card-text">Riding the investment wave? This JavaScript app will help you calculate how much profit/loss you currently have with your stocks.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://stockprofitloss123.netlify.app/" target="_blank"><button type="button" class="card-btns btn btn-sm btn-dark">Live Project</button></a>
-                                    <a href="https://github.com/dhruvin25799/stock_profit_loss_calculator" target="_blank"><button type="button" class="card-btns btn btn-sm btn-outline-secondary">Source Code</button></a>
-                                </div>
-                                <small class="text-muted">October, 2021</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <a
+            class="link link-primary"
+            href="https://replit.com/@DhruvinMehta/GameofThrone-quiz?embed=true" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/GameofThrone-quiz" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list ow">
+          <h1>Minion Talk Translator</h1>
+          <small>October, 2021</small>
+          <p>
+            Ever wondered what the gibberish that <strong>Minions</strong> speak could be a language, well fun fact it is! Head over to this app to <strong>translate English to Minion/Banana.</strong>
+          </p>
 
-    <!--<ul class="list-non-bullet">
-        <li>
-            <article class="showcase-list container container-center ow">
+          <a
+            class="link link-primary"
+            href="https://miniontranslator123.netlify.app" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/minion_talk" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list container container-center">
+          <h1>Valyrian Talk Translator</h1>
+          <small>October, 2021</small>
+          <p>
+            Liked the Minion/Banana Translator above? Here's another one for all my Game of Thrones fans, <strong>English to Valyrian transalator.</strong> Unleash your inner Daenerys Targaryen!
+          </p>
+
+          <a
+            class="link link-primary"
+            href="https://valyriantalk123.netlify.app" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/valyrian_talk" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list ow">
+          <h1>Emoji Meaning</h1>
+          <small>October, 2021</small>
+          <p>
+            Do you ever sometimes wonder what an emoji means? Well this for all my clueless friends to get clues from emojis. This <strong>React app</strong> tell you exactly what <strong>an emoji means!</strong>
+          </p>
+
+          <a
+            class="link link-primary"
+            href="https://wxblw.csb.app/" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/emoji_meaning" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list container container-center">
+          <h1>Flag Meaning</h1>
+          <small>October, 2021</small>
+          <p>
+            Confused with flags? This <strong>React app</strong> will tell you exactly what kind of <strong>flag!</strong>
+          </p>
+
+          <a
+            class="link link-primary"
+            href="https://h9o28.csb.app/" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/flag_meaning" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list ow">
+          <h1>Music Recommendation</h1>
+          <small>October, 2021</small>
+          <p class="hero-heading">
+            Wanna up your playlist? Looking for some good <strong>music recommendations?</strong> This <strong>React</strong> app does just that music recommendations from the upcoming <span class="heading-inverted">{web developer}</span> himself.
+          </p>
+          <a
+            class="link link-primary"
+            href="https://dl7w0.csb.app/" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/music_recommendation" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list container container-center">
+          <h1>Cash Register</h1>
+          <small>October, 2021</small>
+          <p>
+            A bit lost while calculating how much change you have to give back? This <strongJavascript</stong> app will tell you exactly how much <strong>change and in what denominations</strong> you have to give back.
+          </p>
+
+          <a
+            class="link link-primary"
+            href="https://cashregisterjs123.netlify.app" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/cash_register_js" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list ow">
+          <h1>Lucky Number</h1>
+          <small>October, 2021</small>
+          <p>
+            Do you believe in luck? Want to know what your <strong>lucky number</strong> is according to your birth date? This <strong>Javascript</strong> app is for you!
+          </p>
+
+          <a
+            class="link link-primary"
+            href="https://luckynumber123.netlify.app" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/birthday_lucky_number_js" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list container container-center">
+          <h1>Fun with Triangles</h1>
+          <small>October, 2021</small>
+          <p>
+            Good with Triangles? Head over to this <strong>JavaScript</strong> app to take a <strong>quiz on traingles.</strong> Also this app has pages to help you with <strong>calculating the hypotenuse and area of the traingle.</strong>
+          </p>
+
+          <a
+            class="link link-primary"
+            href="https://trianglefun123.netlify.app" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/triangle_fun" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list ow">
+          <h1>Palindrome Birthday</h1>
+          <small>October, 2021</small>
+          <p>
+            Obsessed with Palindromes? This <strong>JavaScript</strong> app will tell you if your <strong>birthday is a palindrome</strong> or not and will also tell you by how many days you missed being the special one! 
+          </p>
+
+          <a
+            class="link link-primary"
+            href="https://birthdaypalindrome123.netlify.app" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/palindrome_birthday" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+        <article class="showcase-list container container-center">
+          <h1>Stock Profit Loss Calculator</h1>
+          <small>October, 2021</small>
+          <p>
+            Riding the investment wave? This <strong>JavaScript</strong> app will help you <strong>calculate how much profit/loss</strong> you currently have with your stocks.
+          </p>
+
+          <a
+            class="link link-primary"
+            href="https://stockprofitloss123.netlify.app" target="_blank"
+            >Live Project</a
+          >
+          <a
+            class="link link-secondary"
+            href="https://github.com/dhruvin25799/stock_profit_loss_calculator" target="_blank"
+            >Source Code</a
+          >
+        </article>
+      </li>
+      <li>
+            <article class="showcase-list ow">
                 <h1>Simon Game</h1>
                 <small>November, 2021</small>
                 <p>
                     An app built with <strong>JS and JQuery</strong>. A fun game that invovles sound and memory!.
                 </p>
 
-                <a class="link link-primary" href="https://simon-game-jquery-js.netlify.app">Live Project</a
+                <a class="link link-primary" href="https://simon-game-jquery-js.netlify.app" target="_blank">Live Project</a
           >
           <a
             class="link link-secondary"
-            href="https://github.com/dhruvin25799/simon_game"
+            href="https://github.com/dhruvin25799/simon_game" target="_blank"
             >Source Code</a
           >
         </article>
@@ -302,28 +299,28 @@
                     An app built with <strong>Vanilla JS</strong>. A two player game that just relies on you refreshing the page. You can spend endless hours there.
                 </p>
 
-                <a class="link link-primary" href="https://dice-refresh.netlify.app">Live Project</a
+                <a class="link link-primary" href="https://dice-refresh.netlify.app" target="_blank">Live Project</a
           >
           <a
             class="link link-secondary"
-            href="https://github.com/dhruvin25799/dice_game_refresh"
+            href="https://github.com/dhruvin25799/dice_game_refresh" target="_blank"
             >Source Code</a
           >
         </article>
       </li>
       <li>
-            <article class="showcase-list container container-center ow">
+            <article class="showcase-list ow">
                 <h1>Drum Kit</h1>
                 <small>November, 2021</small>
                 <p>
                     An app built with <strong>Vanilla JS</strong>. Ever wanted to play drums? Here you can play with drums by clicking or by your keyboard!
                 </p>
 
-                <a class="link link-primary" href="https://drum-wasd.netlify.app/">Live Project</a
+                <a class="link link-primary" href="https://drum-wasd.netlify.app/" target="_blank">Live Project</a
           >
           <a
             class="link link-secondary"
-            href="https://github.com/dhruvin25799/drum_kit_js"
+            href="https://github.com/dhruvin25799/drum_kit_js" target="_blank"
             >Source Code</a
           >
         </article>
@@ -336,22 +333,38 @@
                     An app built with <strong>HTML, CSS, Bootstrap5</strong>. A clone of tinder website homepage with a twist! Tinder for dogs, TINDOG!
                 </p>
 
-                <a class="link link-primary" href="https://tindog-html.netlify.app/">Live Project</a
+                <a class="link link-primary" href="https://tindog-html.netlify.app/" target="_blank">Live Project</a
           >
           <a
             class="link link-secondary"
-            href="https://github.com/dhruvin25799/tindog_html"
+            href="https://github.com/dhruvin25799/tindog_html" target="_blank"
             >Source Code</a
           >
-        </article>-->
+        </article>
+      </li>
+    </ul>
 
-    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-header">Social Media Handles</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/dhruvin25799" target="_blank">
+                    <img src="../images/icons/github-brands.svg" alt="Github">
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://linkedin.com/in/dhruvin-mehta-21a8a7190" target="_blank">
+                    <img src="../images/icons/linkedin-brands.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="mailto:dhruvin.mehta25799@gmail.com" target="_blank">
+                    <img src="../images/icons/envelope-solid.svg" alt="Email">
+                </a>
+            </li>
 
-    <footer id="footer">
-        <a href="https://github.com/dhruvin25799" target="_blank"><i class="social-icon fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/dhruvin-mehta-21a8a7190" target="_blank"><i class="social-icon fab fa-linkedin"></i></a>
-        <a href="mailto:dhruvin.mehta25799@gmail.com"><i class="social-icon fas fa-envelope"></i></a>
-        <p>With <i class="fas fa-heart"></i> from Dhruvin Mehta</p>
+        </ul>
+    </div>
     </footer>
 
 
